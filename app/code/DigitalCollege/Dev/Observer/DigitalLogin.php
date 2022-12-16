@@ -17,13 +17,13 @@ class  DigitalLogin implements  ObserverInterface
     {
        echo "Paramos no Nosso Observer!";
        $customer= $observer->getEvent()->getCustomer();
-       echo '<br>';
-       echo $customer->getName(); //O Método é o nome da coluna
-        echo '<br>';
+            echo '<br>';
+        echo $customer->getName(); //O Método é o nome da coluna
+            echo '<br>';
         echo $customer->getEmail();
-        echo '<br>';
+            echo '<br>';
         echo $customer->getGroupId();
-        $this->saveData($customer->getName(), $customer->getEmail());
+            $this->saveData($customer->getName(), $customer->getEmail());
         exit;
     }
     public function saveData($name, $email, $obs = 'nada obs')
