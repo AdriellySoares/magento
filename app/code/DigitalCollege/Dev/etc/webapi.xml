@@ -7,4 +7,10 @@
             <resource ref="anonymous"/>
         </resources>
     </route>
+    <route url="/V1/custom/products" method="GET">
+        <service class="DigitalCollege\Dev\Api\CategoryLinkManagementInterface" method="getAssignedProducts" />
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
 </routes>
